@@ -1,0 +1,39 @@
+<p>tour works!</p>
+<h1>Upcoming Shows</h1>
+
+<section>
+    <div>
+        <div [routerLink]="['/welcome']" (click)="selectedItem = 'welcome'" routerLinkActive="active">
+            @if (selectedItem === 'welcome') {
+                <span><strong>Welcome</strong></span>
+            }
+            @else {
+                <span>Welcome</span>
+            }
+        </div>
+        <div [routerLink]="['/documents']" routerLinkActive="active" (click)="selectedItem = 'documents'">
+            @if (selectedItem === 'documents') {
+                <span><strong>Documents</strong></span>
+            }
+            @else {
+                <span>Documents</span>
+            }
+        </div>
+        <div [routerLink]="['/liam']" routerLinkActive="active" (click)="selectedItem = 'liam'">
+            @if (selectedItem === 'liam') {
+                <span><strong>Liam</strong></span>
+            }
+            @else {
+                <span>Liam</span>
+            }
+        </div>
+        <div [routerLink]="['/merch']" routerLinkActive="active" (click)="selectedItem = 'merch'">
+            @if (selectedItem === 'merch') {
+                <span><strong>Merch</strong></span>
+            }
+            @else {
+                <span>Merch</span>
+            }
+        </div>
+    </div>
+</section>

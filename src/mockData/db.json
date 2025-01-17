@@ -1,0 +1,40 @@
+{
+        "tourInfo": [
+            {
+                "venue": "O2 Arena",
+                "date": "1st June 2025",
+                "city": "London",
+                "country": "UK"
+            },
+            {
+                "venue": "Birmingham Arena",
+                "date": "3rd June 2025",
+                "city": "Birmingham",
+                "country": "UK"
+            },
+            {
+                "venue": "Manchester Arena",
+                "date": "5th June 2025",
+                "city": "Manchester",
+                "country": "UK"
+            },
+            {
+                "venue": "The SSE Hydro",
+                "date": "7th June 2025",
+                "city": "Glasgow",
+                "country": "UK"
+            },
+            {
+                "venue": "3Arena",
+                "date": "9th June 2025",
+                "city": "Dublin",
+                "country": "Ireland"
+            },
+            {
+                "venue": "SSE Arena",
+                "date": "11th June 2025",
+                "city": "Belfast",
+                "country": "Northen Ireland"
+            }
+        ]
+}

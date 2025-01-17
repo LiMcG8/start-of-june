@@ -1,0 +1,66 @@
+<div class="signup">
+  <div class="signup-header">
+    <h1>Sign Up</h1>
+    <p>Stay up to date with all things Start of June</p>
+  </div>
+
+  <form [formGroup]="contactForm" (ngSubmit)="saveContact()">
+    <section>
+      <div class="name">
+        <input
+          formControlName="firstName"
+          type="text"
+          placeholder="First Name"
+          class="first-name"
+        />
+        
+        <input
+          formControlName="lastName"
+          type="Text"
+          placeholder="Second Name"
+          class="second-name"
+        />
+      </div>
+      
+    </section>
+
+    @if (contactForm.controls.firstName.invalid) {
+        <div>Please enter first name</div>
+        }
+
+    <section>
+      <div class="phone">
+        <select class="country-code">
+          <option></option>
+          @for (country of countryCodes ; track $index) {
+          <option>{{ country.countryName }} ({{ country.code }})</option>
+          }
+        </select>
+        <!-- <input type="tel" class=""/> -->
+        <input
+          formControlName="phoneNumber"
+          type="tel"
+          placeholder="Phone Number"
+          class="phone-number"
+        />
+      </div>
+    </section>
+
+    <section>
+      <div class="email">
+        <input
+          formControlName="email"
+          class="email-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+        />
+      </div>
+    </section>
+
+    <div class="button">
+      <button type="submit">Sign Up</button>
+    </div>
+  </form>
+</div>
