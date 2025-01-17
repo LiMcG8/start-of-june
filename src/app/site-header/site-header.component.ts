@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { NewsComponent } from "../news/news.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-site-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NewsComponent],
+  imports: [RouterModule, CommonModule, NewsComponent],
   templateUrl: './site-header.component.html',
   styleUrl: './site-header.component.css'
 })

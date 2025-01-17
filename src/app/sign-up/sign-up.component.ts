@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
@@ -25,7 +25,7 @@ export class SignUpComponent {
     { code: '+64', countryName: 'New Zealand' }
   ];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(@Inject(FormBuilder) private fb: FormBuilder) {}
 
   selectedCountryCode = '+44';
 

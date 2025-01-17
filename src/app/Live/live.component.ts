@@ -1,12 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-live',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterModule, CommonModule, RouterLinkActive],
   templateUrl: './live.component.html',
-  styleUrl: './live.component.css'
+  styleUrls: ['./live.component.css']
 })
 export class LiveComponent {
 
